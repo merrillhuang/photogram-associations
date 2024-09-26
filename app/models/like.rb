@@ -17,7 +17,7 @@ class Like < ApplicationRecord
   })
 
   belongs_to(:fan, class_name: "User", foreign_key: "fan_id")
-  belongs_to(:photo)
+  belongs_to(:photo, class_name: "Photo", foreign_key: "photo_id")
   # Association accessor methods to define:
   
   ## Direct associations
